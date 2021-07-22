@@ -16,7 +16,7 @@ async def on_ready():
     
 
 
-i = 1
+i = 22
 async def a():
     await client.wait_until_ready()
     channel = client.get_channel(866887465172336650)
