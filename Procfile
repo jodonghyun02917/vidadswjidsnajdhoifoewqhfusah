@@ -1,0 +1,1 @@
+worker: Python WooShin.py
