@@ -27,7 +27,7 @@ async def a():
         f.close()
         await channel.send("```"+x+"```")
         i += 1
-        await asyncio.sleep(10)
+        await asyncio.sleep(60*60*24)
 @client.event
 async def on_message(message): #사용자가 메시지를 입력했을 때
     if message.content == "!급식":
