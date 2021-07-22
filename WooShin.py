@@ -1,7 +1,7 @@
 import discord
 import asyncio
 import datetime as dt
-token = 'ODY1NjAzNjI4Njk3NzgwMjQ0.YPGaMw.hHef4P_BbnDZFKtIKo4o6-jARGE'
+import os
 client = discord.Client()
 
 
@@ -36,4 +36,5 @@ async def on_message(message): #사용자가 메시지를 입력했을 때
 
         
 client.loop.create_task(a())
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
